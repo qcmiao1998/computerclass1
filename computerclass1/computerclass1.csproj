@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="if1.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -78,6 +79,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="if1.aspx.cs">
+      <DependentUpon>if1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="if1.aspx.designer.cs">
+      <DependentUpon>if1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="output.aspx.cs">
       <DependentUpon>output.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
