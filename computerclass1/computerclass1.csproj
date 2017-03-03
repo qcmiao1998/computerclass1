@@ -87,6 +87,7 @@
     <Compile Include="ID.aspx.designer.cs">
       <DependentUpon>ID.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IDClass1.cs" />
     <Compile Include="if1.aspx.cs">
       <DependentUpon>if1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
