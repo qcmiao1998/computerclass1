@@ -18,14 +18,21 @@ namespace computerclass1
         protected void Button1_Click(object sender, EventArgs e)
         {
             IDClass1 vid = new IDClass1();
-            string outputwords = "Unknown ERROR";
+
+            //检查有无问题
+            string outputwords = "";
             switch (vid.VerifyID(TextBox1.Text))
             {
-                case 1: outputwords= "输入的位数错误"; break;
-                case 2: outputwords= "该身份证号码格式错误"; break;
-
+                case 1: outputwords = "输入的位数错误"; break;
+                case 2: outputwords = "该身份证号码格式错误"; break;
+                case 3: outputwords = "校验位不正确，请检查输入的身份证号码是否有误"; break;
             }
-            Response.Write("<script language='javascript'>alert('"+ outputwords +"')</script>");
+            if (outputwords != "" )
+            {
+                Response.Write("<script language='javascript'>alert('" + outputwords + "')</script>");
+                return;
+            }
+            
 
         }
     }
