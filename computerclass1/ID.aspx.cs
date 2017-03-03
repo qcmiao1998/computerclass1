@@ -17,11 +17,12 @@ namespace computerclass1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string ID = TextBox1.Text;
             IDClass1 vid = new IDClass1();
 
             //检查有无问题
             string outputwords = "";
-            switch (vid.VerifyID(TextBox1.Text))
+            switch (vid.VerifyID(ID))
             {
                 case 1: outputwords = "输入的位数错误"; break;
                 case 2: outputwords = "该身份证号码格式错误"; break;
@@ -32,7 +33,21 @@ namespace computerclass1
                 Response.Write("<script language='javascript'>alert('" + outputwords + "')</script>");
                 return;
             }
-            
+            //获取信息并输出
+            string hometown;
+            DateTime birthday;
+            bool gender;
+            vid.GetIDinfo(ID, out hometown, out birthday, out gender);
+            outputcity.Text = hometown;
+            outputbirth.Text = birthday.ToLongDateString().ToString();
+            if (gender==true)
+            {
+                outputgender.Text = "男";
+            }
+            else
+            {
+                outputgender.Text = "女";
+            }
 
         }
     }

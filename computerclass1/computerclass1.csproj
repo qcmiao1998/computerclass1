@@ -43,10 +43,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,9 +74,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\gbt2260-2013.mdf" />
+    <Content Include="App_Data\gbt2260-2013_log.ldf">
+      <DependentUpon>gbt2260-2013.mdf</DependentUpon>
+    </Content>
+    <Content Include="db1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db1.edmx</DependentUpon>
+      <LastGenOutput>db1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="db1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db1.edmx</DependentUpon>
+      <LastGenOutput>db1.cs</LastGenOutput>
+    </Content>
     <Content Include="ID.aspx" />
     <Content Include="if1.aspx" />
     <Content Include="packages.config" />
+    <EntityDeploy Include="db1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="db1.edmx.diagram">
+      <DependentUpon>db1.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -80,6 +110,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cityID.cs">
+      <DependentUpon>db1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="ID.aspx.cs">
       <DependentUpon>ID.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,6 +151,12 @@
       <DependentUpon>output.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -14,6 +14,13 @@
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="确认" />
+            <br />
+            <br />
+            户口所在地：<asp:Label ID="outputcity" runat="server"></asp:Label>
+            <br />
+            出生日期：<asp:Label ID="outputbirth" runat="server"></asp:Label>
+            <br />
+            性别：<asp:Label ID="outputgender" runat="server"></asp:Label>
         </div>
     </form>
 </body>
