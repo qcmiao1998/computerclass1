@@ -98,7 +98,6 @@
     <Content Include="db1.edmx.diagram">
       <DependentUpon>db1.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
