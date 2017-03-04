@@ -64,19 +64,28 @@ namespace computerclass1
             genderpart = ID.Substring(16, 1);
 
             //获取出生地
-            Entities1 db = new Entities1();
-            var province = (from c in db.cityID where c.Id == frompart.Substring(0,3)+ "000" select c.city).Single();
-            var city = (from c in db.cityID where c.Id == frompart select c.city).Single();
-            //string prov, cit;
-            //foreach (var item in province)
-            //{
-            //    prov = item;
-            //}
-            //foreach (var item in city)
-            //{
-            //    cit = item;
-            //}
-            hometown = province + city;
+            try 
+	        {	        
+		        Entities1 db = new Entities1();
+                var province = (from c in db.cityID where c.Id == frompart.Substring(0,3)+ "000" select c.city).Single();
+                var city = (from c in db.cityID where c.Id == frompart select c.city).Single();
+                //string prov, cit;
+                //foreach (var item in province)
+                //{
+                //    prov = item;
+                //}
+                //foreach (var item in city)
+                //{
+                //    cit = item;
+                //}
+                hometown = province + city;
+	        }
+	        catch
+	        {
+                hometown = "Err. 身份证号有误或数据库错误";
+		        
+	        }
+           
             //获取生日
             birthday = DateTime.ParseExact(birthpart, "yyyyMMdd", System.Globalization.CultureInfo.InvariantCulture);
             //获取性别
