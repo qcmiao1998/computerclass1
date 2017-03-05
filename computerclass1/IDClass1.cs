@@ -80,9 +80,9 @@ namespace computerclass1
                 //}
                 hometown = province + city;
 	        }
-	        catch
+	        catch (Exception a)
 	        {
-                hometown = "Err. 身份证号有误或数据库错误";
+                hometown = "Err. " + a;
 		        
 	        }
            
