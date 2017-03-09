@@ -88,6 +88,7 @@
       <DependentUpon>db1.edmx</DependentUpon>
       <LastGenOutput>db1.cs</LastGenOutput>
     </Content>
+    <Content Include="factorial.aspx" />
     <Content Include="ID.aspx" />
     <Content Include="if1.aspx" />
     <Content Include="packages.config" />
@@ -128,6 +129,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>db1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="factorial.aspx.cs">
+      <DependentUpon>factorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="factorial.aspx.designer.cs">
+      <DependentUpon>factorial.aspx</DependentUpon>
     </Compile>
     <Compile Include="ID.aspx.cs">
       <DependentUpon>ID.aspx</DependentUpon>
