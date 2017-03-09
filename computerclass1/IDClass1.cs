@@ -67,7 +67,7 @@ namespace computerclass1
             try 
 	        {	        
 		        Entities1 db = new Entities1();
-                var province = (from c in db.cityID where c.Id == frompart.Substring(0,3)+ "000" select c.city).Single();
+                var province = (from c in db.cityID where c.Id == frompart.Substring(0,2)+ "0000" select c.city).Single();
                 var city = (from c in db.cityID where c.Id == frompart select c.city).Single();
                 //string prov, cit;
                 //foreach (var item in province)
