@@ -16,8 +16,13 @@ namespace computerclass1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            long outnum = 1;
-            for (int i = 1; i <= int.Parse(TextBox1.Text); i++)
+            if (TextBox1.Text=="")
+            {
+                Response.Write("请输入值");
+                return;
+            }
+            ulong outnum = 1;
+            for (uint i = 1; i <= uint.Parse(TextBox1.Text); i++)
             {
                 outnum = outnum * i;
             }
