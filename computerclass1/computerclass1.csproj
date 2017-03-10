@@ -91,6 +91,7 @@
     <Content Include="factorial.aspx" />
     <Content Include="ID.aspx" />
     <Content Include="if1.aspx" />
+    <Content Include="triangle.aspx" />
     <Content Include="packages.config" />
     <EntityDeploy Include="db1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="output.aspx.designer.cs">
       <DependentUpon>output.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="triangle.aspx.cs">
+      <DependentUpon>triangle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="triangle.aspx.designer.cs">
+      <DependentUpon>triangle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
