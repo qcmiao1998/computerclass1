@@ -1,0 +1,1065 @@
+﻿body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #CCCCCC;
+    font-color:#636361 
+}
+
+.edbox {
+BACKGROUND-COLOR: #ffffff;
+FONT-SIZE: 12px;
+border: 1px solid #CCCCCC;}
+
+td {
+	font-size: 12px;
+	color: #000000;
+	line-height: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+ 
+	
+}
+	
+
+.style9 {color: #005EE4}
+
+
+.input3 {
+      	BACKGROUND-COLOR: #ffffff;
+	FONT-SIZE: 12px;
+	border: 1px solid #CCCCCC;
+}
+
+
+.style7 {
+	color: #382F88;
+	font-weight: bold;
+}
+
+.abc {
+    text-decoration: line-through;
+	color: #FF3F01;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+}
+   
+.botton1 {
+	background-image: url(../images/button_bg.gif);
+	width:70px;
+	height:21px;
+	border:0px none;
+	font-size: 12px;
+	line-height: 23px;
+	}
+
+.white12px {
+	color: #FFFFFF;
+}
+
+.white:link {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.white:visited {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.white:hover {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+
+.white_:link {
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.white_:visited {
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.white_:hover {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.white_14:link {
+	color: #ffffff;
+	text-decoration: none;
+        font-size: 14px;
+}
+.white_14:visited {
+	color: #ffffff;
+	text-decoration: none;
+        font-size: 14px;
+}
+.white_14:hover {
+	color: #ededed;
+	text-decoration: none;
+        font-size: 14px;
+}
+
+.hui:link {
+	color: #3F372C;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui:visited {
+	color: #3F372C;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui:hover {
+	color: #125FA7;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.hui2:link {
+	color: #555555;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui2:visited {
+	color: #555555;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui2:hover {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+.hui3:link {
+	color: #323232;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui3:visited {
+	color: #323232;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui3:hover {
+	color: #757575;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+
+.hui3_14:link {
+	color: #323232;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.hui3_14:visited {
+	color: #323232;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.hui3_14:hover {
+	color: #cccccc;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+        font-size: 14px;
+}
+
+
+
+.ablue:link {
+	color: #00007E;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue:visited {
+	color: #00007E;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue:hover {
+	color: #CB5128;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+.ablue6:link {
+	color: #00349E;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue6:visited {
+	color: #00349E;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue6:hover {
+	color: #00007E;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ablue5:link {
+	color: #043B96;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.ablue5:visited {
+	color: #043B96;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.ablue5:hover {
+	color: #043B96;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+        font-size: 14px;
+}
+
+
+
+.ablue_7:link {
+	color: #0D60A6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue_7:visited {
+	color: #0D60A6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ablue_7:hover {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+       
+}
+
+
+.ablue_8:link {
+	color: #2A60B6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.ablue_8:visited {
+	color: #2A60B6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+.ablue_8:hover {
+	color: #0D60A6;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+        font-size: 14px;
+}
+
+
+
+.hui1:link {
+	color: #454545;
+	text-decoration:  underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui1:visited {
+	color:  #454545;
+	text-decoration:  underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hui1:hover {
+	color: #6D6D6D;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:  underline;
+}
+
+
+
+.a_red:link {
+	color: #FF0000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}
+.a_red:visited {
+	color: #FF0000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}
+.a_red:hover {
+	color: #FF3300;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+        font-size: 12px;
+}
+
+
+
+
+.a_red_14:link {
+	color: #D81A00;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+        font-size:14px;
+}
+.a_red_14:visited {
+	color: #D81A00;
+	text-decoration: none;
+	font-family:Helvetica, sans-serif;
+        font-size:14px;
+}
+.a_red_14:hover {
+	color: #000000;
+	text-decoration: none;
+        font-size:14px;
+}
+
+
+
+
+
+
+
+
+.a_redtwo:link {
+	color: #990340;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_redtwo:visited {
+	color: #990340;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_redtwo:hover {
+	color: #990340;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_red3:link {
+	color: #FF0103;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_red3:visited {
+	color: #FF0103;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_red3:hover {
+	color: #FF0103;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_red4:link {
+	color: #A92F00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_red4:visited {
+	color: #A92F00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_red4:hover {
+	color: #A92F00;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_yellow:link {
+	color: #FF7E00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow:visited {
+	color: #FF7E00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow:hover {
+	color: #ff0000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+.a_yellow8:link {
+	color: #FE5B94;
+	text-decoration: none;
+	font-size: 14px;
+}
+.a_yellow8:visited {
+	color: #FE5B94;
+	text-decoration: none;
+	font-size: 14px;
+}
+.a_yellow8:hover {
+	color: #FE5B94;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+
+
+
+.a_yellow1:link {
+	color: #C05D00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow1:visited {
+	color: #C05D00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow1:hover {
+	color: #C05D00;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.a_yellow_0:link {
+	color: #785B21;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_0:visited {
+	color: #785B21;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_0:hover {
+	color: #C05D00;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.a_yellow_3:link {
+	color: #FF7701;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_3:visited {
+	color: #FF7701;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_3:hover {
+	color: #F49500;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_yellow_4:link {
+	color: #FF6522;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_4:visited {
+	color: #FF6522;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_4:hover {
+	color: #FF6522;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+.a_green:link {
+	color: #2A9E02;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green:visited {
+	color: #2A9E02;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green:hover {
+	color: #2A9E02;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_green_1:link {
+	color: #2A9E02;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green_1:visited {
+	color: #2A9E02;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green_1:hover {
+	color: #2A9E02;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.a_blue:link {
+	color: #035E97;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_blue:visited {
+	color: #035E97;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_blue:hover {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.a_green_2:link {
+	color: #94AA00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green_2:visited {
+	color: #94AA00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_green_2:hover {
+	color: #94AA00;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+.a_amethyst:link {
+	color: #2960B8;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_amethyst:visited {
+	color: #2960B8;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_amethyst:hover {
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.a_yellow_1:link {
+	color: #AA8000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_1:visited {
+	color: #AA8000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow_1:hover {
+	color: #ff0000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.black:link {
+	color: #000000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.black:visited {
+	color: #000000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.black:hover {
+	color: #115FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+
+
+
+
+.black_:link {
+	color: #000000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.black_:visited {
+	color: #000000;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.black_:hover {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	font-size:12px;
+}
+
+
+.red12px{
+	color: #FF3E03;
+	font-size: 12px;
+}
+
+
+.a_blue_3:link {
+	color: #007BD1;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_blue_3:visited {
+	color: #007BD1;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_blue_3:hover {
+	color: #CB5128;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+.a_blue_9:link {
+	color: #1085B8;
+	text-decoration: none;
+	FONT-SIZE: 14px;
+}
+.a_blue_9:visited {
+	color: #1085B8;
+	text-decoration: none;;
+	FONT-SIZE: 14px;
+}
+.a_blue_9:hover {
+	color: #CB5128;
+	FONT-SIZE: 14px;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.aabc:link {
+	color: #0070BC;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.aabc:visited {
+	color: #0070BC;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.aabc:hover {
+	color: #0070BC;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.blue12px{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.blue14px{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.blue16px{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.style15 {
+         font-weight: bold;
+	 font-size: 14px;
+}
+
+.green10px_en{
+	color: #498638;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.green14px_cn{
+	color: #498638;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.white12px-en {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FCFCFC;
+}
+
+.white14px{
+	color: #FCFCFC;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.black12px-en {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+.black12px {
+	color: #4D4D4D;
+}
+
+
+.black14px {
+	font-family: Arial, Helvetica, sans-serif;
+
+	color: #4D4D4D;
+	font-size: 12px;
+}
+
+
+.black14px_en {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	font-size: 14px;
+	line-height:2em;        
+}
+.tdtwo {
+	line-height: 180%;
+}
+
+.tdthree {
+	line-height: 150%;
+}
+
+.tdfour {
+	line-height: 220%;
+}
+
+.px_14 {  font-size: 12px; filter:dropshadow(color=#000000,offx=1,offy=1,positive=7)}
+
+.xu {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-bottom-color: #cecece;
+}
+.text {line-height: 1.2em;     
+       letter-spacing: 0.5em;    
+       text-indent: 2em; margin-top: 2em;
+       margin-bottom: 2em;
+} 
+.box {height:19px;
+}
+
+
+.my_1{
+	color: #656565;
+	text-decoration: underline;
+}
+.my_1:link{
+	color: #656565;
+	text-decoration: none;
+}
+.my_1:hover{
+	color: #656565;
+	text-decoration: underline;
+}
+.my_1:visited{
+	color: #656565;
+	text-decoration: none;
+}
+
+.my_2 {color: #FF0000}
+.my_2:link {
+	color: #FF0000;
+	text-decoration:none;
+}
+.my_2:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+.my_2:visited {
+	color: #FF0000;
+	text-decoration:none;
+}
+.my_3 {
+	color: #3A7F00;
+	font-weight: bold;
+}
+
+
+.my_4:link {
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.my_4:visited {
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.my_4:hover {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.my_5:link {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.my_5:visited {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.my_5:hover {
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.blue12px{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+}
+.blue12px:link{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+.blue12px:hover{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+.blue12px:visited{
+	color: #2960B8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.my_input { 
+}
+
+.my_td { color: #656565; height: 23px; font-weight:bold; }
+
+.style6 {color: #000000; 
+         font-weight: bold; 
+         font-size: 14px; 
+}
+
+.px15{background-color: #F1EAE0; }
+
+
+.ayellow:link {
+	color: #975B05;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ayellow:visited {
+	color: #975B05;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ayellow:hover {
+	color: #5F3A06;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+.a12:link {
+	color: #444E94;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a12:visited {
+	color: #444E94;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a12:hover {
+	color: #064299;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.a_yellow_1 {
+	color: #AA8000;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.a_yellow8 {
+	color: #FF6600;
+	text-decoration: none;
+	font-size: 14px;
+}
+.change_td{
+	background-color:#356397;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.top_style7 {
+	color: #FDE500;
+	font-weight: bold;
+}
+
+.user_left{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.local_url:link {
+	font-size: 12px;
+	color: #656565;
+	line-height: 15px;
+	text-decoration: none;	
+}
+.local_url:hover {
+	font-size: 12px;
+	color: #656565;
+	line-height: 15px;
+	text-decoration: underline;	
+}
+.local_url:visited {
+	font-size: 12px;
+	color: #656565;
+	line-height: 15px;
+	text-decoration: none;	
+}
+
+.ablue_8_new:link {
+	color: #2A60B6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}
+.ablue_8_new:visited {
+	color: #2A60B6;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}
+.ablue_8_new:hover {
+	color: #0D60A6;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+        font-size: 12px;
+}
+.a_red_14:link {
+	color: #D81A00;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+        font-size:12px;
+}
+.a_red_14_new:visited {
+	color: #D81A00;
+	text-decoration: none;
+	font-family:Helvetica, sans-serif;
+        font-size:12px;
+}
+.a_red_14_new:hover {
+	color: #000000;
+	text-decoration: none;
+        font-size:12px;
+}
+.my_input { 
+}
+.tr_1 {
+	DISPLAY: none;
+}
+.tr_2 {
+	DISPLAY: ;
+}
+
