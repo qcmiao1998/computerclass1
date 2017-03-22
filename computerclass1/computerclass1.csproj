@@ -114,7 +114,6 @@
     <Content Include="admin\image\website_top_2.gif" />
     <Content Include="admin\image\website_top_2.jpg" />
     <Content Include="admin\login.aspx" />
-    <Content Include="admin\login.html" />
     <Content Include="admin\StyleSheet.css" />
     <Content Include="admin\ValidateImage.aspx" />
     <Content Include="App_Data\gbt2260-2013.mdf" />

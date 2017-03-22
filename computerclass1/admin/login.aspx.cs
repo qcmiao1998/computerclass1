@@ -13,5 +13,13 @@ namespace computerclass1.admin
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (tbxUsername.Text=="test" && tbxPwd.Text=="test")
+            {
+                Response.Write("<script language='javascript'>alert ('success')</script>");
+            }
+        }
     }
 }

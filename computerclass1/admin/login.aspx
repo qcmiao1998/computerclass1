@@ -41,17 +41,21 @@
               <td style="height: 30px; width: 182px;"><div align="right" class="unnamed1">&nbsp; 用户名:&nbsp;&nbsp; </div></td>
               <td width="55%" style="height: 30px"> 
              <div align="left">
-                  &nbsp;</div></td>
+                  &nbsp;<asp:TextBox ID="tbxUsername" runat="server"></asp:TextBox>
+                  </div></td>
             </tr>
             <tr>
               <td style="width: 182px; height: 19px"><div align="right" class="unnamed1">密&nbsp; 码:&nbsp;&nbsp; </div></td>
               <td style="height: 19px"><div align="left">
-                  &nbsp;</div></td>
+                  &nbsp;<asp:TextBox ID="tbxPwd" runat="server" TextMode="Password"></asp:TextBox>
+                  </div></td>
             </tr>
             <tr>
               <td height="30" style="width: 182px"><div align="right">
+                  <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />
                 &nbsp;</div></td>
               <td height="30"><div align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  <asp:Button ID="btnReset" runat="server" Text="Reset" />
             </div></td>
             </tr>
           </table>
