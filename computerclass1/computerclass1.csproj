@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\Default.aspx" />
     <Content Include="admin\image\beijing.gif" />
     <Content Include="admin\image\bg.gif" />
     <Content Include="admin\image\btzhuan.gif" />
@@ -113,8 +114,11 @@
     <Content Include="admin\image\website_top_1.gif" />
     <Content Include="admin\image\website_top_2.gif" />
     <Content Include="admin\image\website_top_2.jpg" />
+    <Content Include="admin\Left.aspx" />
     <Content Include="admin\login.aspx" />
+    <Content Include="admin\Main.aspx" />
     <Content Include="admin\StyleSheet.css" />
+    <Content Include="admin\top.aspx" />
     <Content Include="admin\ValidateImage.aspx" />
     <Content Include="App_Data\gbt2260-2013.mdf" />
     <Content Include="App_Data\gbt2260-2013_log.ldf">
@@ -161,12 +165,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="admin\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\ValidateImage.aspx.cs">
       <DependentUpon>ValidateImage.aspx</DependentUpon>

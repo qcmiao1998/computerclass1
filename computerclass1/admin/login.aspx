@@ -41,13 +41,15 @@
               <td style="height: 30px; width: 182px;"><div align="right" class="unnamed1">&nbsp; 用户名:&nbsp;&nbsp; </div></td>
               <td width="55%" style="height: 30px"> 
              <div align="left">
-                  &nbsp;<asp:TextBox ID="tbxUsername" runat="server"></asp:TextBox>
+                  &nbsp;<asp:TextBox ID="tbxUsername" runat="server" Width="145px"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbxUsername" ErrorMessage="不得为空" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div></td>
             </tr>
             <tr>
               <td style="width: 182px; height: 19px"><div align="right" class="unnamed1">密&nbsp; 码:&nbsp;&nbsp; </div></td>
               <td style="height: 19px"><div align="left">
-                  &nbsp;<asp:TextBox ID="tbxPwd" runat="server" TextMode="Password"></asp:TextBox>
+                  &nbsp;<asp:TextBox ID="tbxPwd" runat="server" TextMode="Password" Width="145px"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbxPwd" ErrorMessage="不得为空" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div></td>
             </tr>
             <tr>
