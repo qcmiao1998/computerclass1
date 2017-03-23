@@ -64,7 +64,7 @@ namespace computerclass1
                 totalloan = totalloan - (repaym - totalloan * ratem);
                 totalmonth++;
             }
-            LabelNumberofMonths.Text = (totalmonth + 1).ToString();
+            LabelNumberofMonths.Text = (totalmonth + 1).ToString() + "&nbsp;月";
             LabelTotalBack.Text = (totalmonth * repaym + totalloan + totalloan * ratem).ToString("c");
             LabelTotalInterest.Text = (totalmonth * repaym + totalloan + totalloan * ratem - double.Parse(tbxTotal.Text)).ToString("c");
             LabelLastMonth.Text = (totalloan + totalloan * ratem).ToString("c");
