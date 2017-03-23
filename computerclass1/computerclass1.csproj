@@ -133,6 +133,7 @@
     <Content Include="factorial.aspx" />
     <Content Include="ID.aspx" />
     <Content Include="if1.aspx" />
+    <Content Include="LoanCalculator.aspx" />
     <Content Include="triangle.aspx" />
     <Content Include="packages.config" />
     <EntityDeploy Include="db1.edmx">
@@ -210,6 +211,13 @@
     </Compile>
     <Compile Include="if1.aspx.designer.cs">
       <DependentUpon>if1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanCalculator.aspx.cs">
+      <DependentUpon>LoanCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanCalculator.aspx.designer.cs">
+      <DependentUpon>LoanCalculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="output.aspx.cs">
       <DependentUpon>output.aspx</DependentUpon>
