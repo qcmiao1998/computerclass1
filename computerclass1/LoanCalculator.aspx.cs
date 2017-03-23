@@ -16,13 +16,13 @@ namespace computerclass1
 
         protected void btnCal_Click(object sender, EventArgs e)
         {
-            double totalloan = new double(); //借款总额
+            double totalloan , leftloan = new double(); //借款总额
             double ratem = new double(); //月息
             double repaym = new double(); //月还款额
             //数据输入
             try
             {
-                totalloan = double.Parse(tbxTotal.Text);
+                totalloan = leftloan = double.Parse(tbxTotal.Text);
             }
             catch
             {
@@ -53,21 +53,21 @@ namespace computerclass1
                 Response.Write("<script language='javascript'>alert('永远还不掉了啊！')</script>");
                 return;
             }
-            if (repaym >= totalloan + totalloan * ratem)
+            if (repaym > totalloan + totalloan * ratem)
             {
                 Response.Write("<script language='javascript'>alert('有这么多钱还贷款干嘛！')</script>");
                 return;
             }
             int totalmonth = 0; //总偿还月数
-            while (repaym < totalloan + totalloan * ratem)
+            while (repaym < leftloan + leftloan * ratem)
             {
-                totalloan = totalloan - (repaym - totalloan * ratem);
+                leftloan = leftloan - (repaym - leftloan * ratem);
                 totalmonth++;
             }
             LabelNumberofMonths.Text = (totalmonth + 1).ToString() + "&nbsp;月";
-            LabelTotalBack.Text = (totalmonth * repaym + totalloan + totalloan * ratem).ToString("c");
-            LabelTotalInterest.Text = (totalmonth * repaym + totalloan + totalloan * ratem - double.Parse(tbxTotal.Text)).ToString("c");
-            LabelLastMonth.Text = (totalloan + totalloan * ratem).ToString("c");
+            LabelTotalBack.Text = (totalmonth * repaym + leftloan + leftloan * ratem).ToString("c");
+            LabelTotalInterest.Text = (totalmonth * repaym + leftloan + leftloan * ratem - totalloan).ToString("c");
+            LabelLastMonth.Text = (leftloan + leftloan * ratem).ToString("c");
         }
     }
 }
