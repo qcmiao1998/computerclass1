@@ -116,9 +116,9 @@
     <Content Include="admin\image\website_top_2.jpg" />
     <Content Include="admin\Left.aspx" />
     <Content Include="admin\login.aspx" />
-    <Content Include="admin\Main.aspx" />
+    <Content Include="admin\main.aspx" />
     <Content Include="admin\StyleSheet.css" />
-    <Content Include="admin\top.aspx" />
+    <Content Include="admin\Top.aspx" />
     <Content Include="admin\ValidateImage.aspx" />
     <Content Include="App_Data\gbt2260-2013.mdf" />
     <Content Include="App_Data\gbt2260-2013_log.ldf">
@@ -134,6 +134,7 @@
       <DependentUpon>db1.edmx</DependentUpon>
       <LastGenOutput>db1.cs</LastGenOutput>
     </Content>
+    <Content Include="dbtest.aspx" />
     <Content Include="factorial.aspx" />
     <Content Include="ID.aspx" />
     <Content Include="if1.aspx" />
@@ -169,9 +170,15 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\Left.aspx.cs">
       <DependentUpon>Left.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -180,13 +187,19 @@
     <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="admin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\top.aspx.cs">
-      <DependentUpon>top.aspx</DependentUpon>
+    <Compile Include="admin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Top.aspx.designer.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\ValidateImage.aspx.cs">
       <DependentUpon>ValidateImage.aspx</DependentUpon>
@@ -209,6 +222,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>db1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="dbtest.aspx.cs">
+      <DependentUpon>dbtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dbtest.aspx.designer.cs">
+      <DependentUpon>dbtest.aspx</DependentUpon>
     </Compile>
     <Compile Include="factorial.aspx.cs">
       <DependentUpon>factorial.aspx</DependentUpon>
@@ -246,6 +266,7 @@
     <Compile Include="output.aspx.designer.cs">
       <DependentUpon>output.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SQLHelper.cs" />
     <Compile Include="triangle.aspx.cs">
       <DependentUpon>triangle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

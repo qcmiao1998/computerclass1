@@ -52,6 +52,14 @@
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbxPwd" ErrorMessage="不得为空" ForeColor="Red"></asp:RequiredFieldValidator>
                   </div></td>
             </tr>
+                          <tr>
+              <td style="width: 182px; height: 19px"><div align="right" class="unnamed1">验证码:&nbsp;&nbsp; </div></td>
+              <td style="height: 19px"><div align="left">
+                  &nbsp;<asp:TextBox ID="tbxValidate" runat="server" Width="111px"></asp:TextBox>
+                  <asp:ImageButton ID="ValidateImage" runat="server" />
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbxPwd" ErrorMessage="不得为空" ForeColor="Red"></asp:RequiredFieldValidator>
+                  </div></td>
+            </tr>
             <tr>
               <td height="30" style="width: 182px"><div align="right">
                   <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />

@@ -10,7 +10,7 @@
 namespace computerclass1.admin {
     
     
-    public partial class login {
+    public partial class main {
         
         /// <summary>
         /// form1 控件。
@@ -22,84 +22,93 @@ namespace computerclass1.admin {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// tbxUsername 控件。
+        /// servername 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxUsername;
+        protected global::System.Web.UI.WebControls.Label servername;
         
         /// <summary>
-        /// RequiredFieldValidator1 控件。
+        /// serverport 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.Label serverport;
         
         /// <summary>
-        /// tbxPwd 控件。
+        /// serverengine 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxPwd;
+        protected global::System.Web.UI.WebControls.Label serverengine;
         
         /// <summary>
-        /// RequiredFieldValidator2 控件。
+        /// root 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.Label root;
         
         /// <summary>
-        /// tbxValidate 控件。
+        /// cpunum 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxValidate;
+        protected global::System.Web.UI.WebControls.Label cpunum;
         
         /// <summary>
-        /// ValidateImage 控件。
+        /// iisver 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ValidateImage;
+        protected global::System.Web.UI.WebControls.Label iisver;
         
         /// <summary>
-        /// RequiredFieldValidator3 控件。
+        /// totaltime 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.Label totaltime;
         
         /// <summary>
-        /// btnLogin 控件。
+        /// servertime 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Label servertime;
         
         /// <summary>
-        /// btnReset 控件。
+        /// serveros 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReset;
+        protected global::System.Web.UI.WebControls.Label serveros;
+        
+        /// <summary>
+        /// browser 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label browser;
     }
 }
