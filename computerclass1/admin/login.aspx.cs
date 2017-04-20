@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SQL;
+using System.Data.SqlClient;
 
 namespace computerclass1.admin
 {
@@ -24,18 +26,41 @@ namespace computerclass1.admin
         }
             protected void btnLogin_Click(object sender, EventArgs e)
         {
+            SQLHelper userdb = new SQLHelper();
+            string pwd;
+            SqlDataReader sdr;
+            string sql = string.Format("select Password from tblstudent where StudentNumber = '{0}' ", tbxUsername.Text);
             if (tbxValidate.Text !=sValidator )
             {
                 Response.Write("<script language='javascript'>alert ('验证码错误')</script>");
                 return;
             }
-            if (tbxUsername.Text=="test" && tbxPwd.Text=="test")
+            try
             {
-                Response.Redirect ("default.aspx");
+                userdb.RunSQL(sql ,out sdr);
+                userdb.Close();
+                
+            }
+            catch (Exception err)
+            {
+                Response.Write(string.Format("Error. {0}", err.Message));
+                return;
+            }
+            if (sdr.Read())
+            {
+                pwd = sdr.GetString(0);
+                if (tbxPwd.Text == pwd)
+                {
+                    Response.Redirect("default.aspx");
+                }
+                else
+                {
+                    Response.Write("<script language='javascript'>alert ('密码错误')</script>");
+                }
             }
             else
             {
-                Response.Write("<script language='javascript'>alert ('用户名密码错误')</script>");
+                Response.Write("<script language='javascript'>alert ('用户名错误')</script>");
             }
         }
     }

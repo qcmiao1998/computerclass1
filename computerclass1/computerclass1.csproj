@@ -74,6 +74,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\admin_add.aspx" />
+    <Content Include="admin\admin_list.aspx" />
     <Content Include="admin\Default.aspx" />
     <Content Include="admin\image\beijing.gif" />
     <Content Include="admin\image\bg.gif" />
@@ -166,6 +168,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\admin_add.aspx.cs">
+      <DependentUpon>admin_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_add.aspx.designer.cs">
+      <DependentUpon>admin_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin_list.aspx.cs">
+      <DependentUpon>admin_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin_list.aspx.designer.cs">
+      <DependentUpon>admin_list.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
