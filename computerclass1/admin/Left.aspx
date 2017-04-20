@@ -1,31 +1,26 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Left.aspx.cs" Inherits="computerclass1.admin.Left" %>
 
-<!DOCTYPE html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>后台管理</title>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <script language="JavaScript" type="text/JavaScript">
-    function showsubmenu(sid,sum)
-    {
-    whichEl = eval("submenu" + sid);
-    if (whichEl.style.display == "none")
-    {
+        function showsubmenu(sid, sum) {
+            whichEl = eval("submenu" + sid);
+            if (whichEl.style.display == "none") {
 
-    for (var i=0;i<=sum;i++)
-    {
-    if(i==sid)
-    eval("submenu" + i + ".style.display=\"\";");
-    else
-    eval("submenu" + i + ".style.display=\"none\";");
-    }
-    }
-    else
-    {
-    eval("submenu" + sid + ".style.display=\"none\";");
-    }
-    }
+                for (var i = 0; i <= sum; i++) {
+                    if (i == sid)
+                        eval("submenu" + i + ".style.display=\"\";");
+                    else
+                        eval("submenu" + i + ".style.display=\"none\";");
+                }
+            }
+            else {
+                eval("submenu" + sid + ".style.display=\"none\";");
+            }
+        }
     </script>
 </head>
 <body>
@@ -40,7 +35,11 @@
 		        <td>
 				    <table width="98%"  border="0" align="center" cellpadding="0" cellspacing="0">
 				      <tr>
-					    <td bgcolor="#FFFFFF" height="25"><img src="image/dot_3.jpg" width="12" height="11">&nbsp;&nbsp;<a href="Get_Admin.aspx" target="main" title="管理员管理" class="black_">管理员管理</a></td>
+					    <td bgcolor="#FFFFFF" height="25"><img src="image/dot_3.jpg" width="12" height="11" 
+                                style="height: 11px">&nbsp;&nbsp;<a href="admin_list.aspx" target="main" 
+                                title="管理员管理" class="black_">管理员管理</a><br />
+                            <img src="image/dot_3.jpg" width="12" height="11" style="height: 11px">&nbsp;
+                            <a href="admin_add.aspx" target="main" title="管理员管理" class="black_">添加管理员</a></td>
 				      </tr>
 				
 				    </table>

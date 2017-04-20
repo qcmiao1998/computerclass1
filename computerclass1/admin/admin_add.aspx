@@ -1,11 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="admin_add.aspx.cs" Inherits="computerclass1.admin.admin_add" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
+<head id="Head1" runat="server">
     <title>添加管理员</title>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style16
+        {
+            height: 29px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,24 +22,101 @@
          </tr>
     </table> 
     <table width="98%"  border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="cccccc">         
-		  <tr bgcolor="#eeeeee">
-            <td width="20%" align="right">后台登录名称：&nbsp;</td>
+		  <tr>
+            <td width="20%" align="right" class="style16">后台登录名称（学号）：</td>
             <td width="80%">
-                <asp:TextBox ID="tbxusername" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbxusername" ErrorMessage="必须输入登录名称" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtstudentnumber" runat="server" TextMode="Number" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Validatorstudentnumber" runat="server" 
+                    ControlToValidate="txtstudentnumber" ErrorMessage="*必须填写此项(长度为11）" 
+                    ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
 		  </tr>
-          <tr bgcolor="#eeeeee">
-            <td align="right">后台登录密码：&nbsp;</td>
+          <tr>
+            <td align="right" class="style17">姓名：</td>
+            <td class="style18">
+                <asp:TextBox ID="txtname" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Validatorname" runat="server" 
+                    ControlToValidate="txtname" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">后台登录密码：</td>
             <td>
-                <asp:TextBox ID="tbxpwd" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbxpwd" ErrorMessage="必须输入登录密码" ForeColor="Red"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="txtpassword" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ValidatorPassWord" runat="server" 
+                    ControlToValidate="txtpassword" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">再次确认密码：</td>
+            <td>
+                <asp:TextBox ID="txtpasswordagain" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ValidatorPassWordagain" runat="server" 
+                    ControlToValidate="txtpasswordagain" ErrorMessage="*必须填写此项" 
+                    ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" 
+                    ControlToCompare="txtpassword" ControlToValidate="txtpasswordagain" 
+                    ErrorMessage="*两次输入不一致" ForeColor="Red"></asp:CompareValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">手机：</td>
+            <td>
+                <asp:TextBox ID="txttelephonenumber" runat="server" TextMode="Number"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ValidatorPasstelephonenumber" runat="server" 
+                    ControlToValidate="txttelephonenumber" ErrorMessage="*必须填写此项" 
+                    ForeColor="Red"></asp:RequiredFieldValidator>
+              &nbsp;<asp:RegularExpressionValidator 
+                    ID="RegularExpressionValidatortelephonenumber" runat="server" ControlToValidate="txttelephonenumber" 
+                    ValidationExpression="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$"   ErrorMessage="*手机号码格式错误!" 
+                    ForeColor="Red"></asp:RegularExpressionValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">性别：</td>
+            <td>
+                <asp:DropDownList ID="DDLSex" runat="server">
+                    <asp:ListItem>男</asp:ListItem>
+                    <asp:ListItem>女</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="Validatorsex" runat="server" 
+                    ControlToValidate="DDLSex" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">出生日期：</td>
+            <td>
+                <asp:TextBox ID="txtbirthday" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Validatorbirthday" runat="server" 
+                    ControlToValidate="txtbirthday" ErrorMessage="*（YYYY/MM/DD)必须填写此项" 
+                    ForeColor="Red"></asp:RequiredFieldValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">院系：</td>
+            <td class="style16">
+                <asp:TextBox ID="txtdept" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Validatordept" runat="server" 
+                    ControlToValidate="txtdept" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+              </td>
+          </tr>
+          <tr>
+            <td align="right" class="style16">电子邮件：</td>
+            <td>
+                <asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="Validatoremail" runat="server" 
+                    ControlToValidate="txtemail" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+              &nbsp;<asp:RegularExpressionValidator 
+                    ID="RegularExpressionValidatortelephonenumber0" runat="server" ControlToValidate="txtemail" 
+                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"   
+                    ErrorMessage="*电子邮件格式错误!" ForeColor="Red"></asp:RegularExpressionValidator>
               </td>
           </tr>
           <tr bgcolor="#eeeeee">
             <td align="right">&nbsp;</td>
             <td>
-                <asp:Button ID="btnadd" runat="server" OnClick="btnadd_Click" Text="ADD" />
+                <asp:Button ID="Btnadd" runat="server" onclick="Btnadd_Click" Text="添加" 
+                    style="width: 40px" />
               </td>
           </tr>
 </table>
