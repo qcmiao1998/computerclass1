@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SQL;
+using System.Data;
+using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace computerclass1.admin
 {
@@ -12,7 +16,15 @@ namespace computerclass1.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SQLHelper db = new SQLHelper();
+            string sql = "select deptID,deptName from tblDept";
+            db.RunSQL(sql);
+            DataSet ds = new DataSet();
+            db.RunSQL(sql, ref ds);
+            ddldept.DataSource = ds.Tables[0];
+            ddldept.DataTextField = "deptName";
+            ddldept.DataValueField = "deptID";
+            ddldept.DataBind();
         }
         protected void Btnadd_Click(object sender, EventArgs e)
         {
@@ -22,23 +34,18 @@ namespace computerclass1.admin
             string mobile = txttelephonenumber.Text;
             string sex = DDLSex.Text;
             string birthday = txtbirthday.Text;
-            string dept = txtdept.Text;
+            string dept = ddldept.Text;
             string email = txtemail.Text;
-            int gender = 0;
+            string gender = DDLSex.SelectedValue;
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] inputpwd = Encoding.Default.GetBytes(txtpassword.Text);
+            byte[] outputpwd = md5.ComputeHash(inputpwd);
+            password = BitConverter.ToString(outputpwd).Replace("-", "");
             if (studentnumber.Length != 11)
             {
                 Response.Write("<script>alert('学号输入有误')</script>");
                 return;
             }
-            if (sex != "男" && sex != "女")
-            {
-                Response.Write("<script>alert('性别输入有误')</script>");
-                return;
-            }
-            if (sex == "男")
-                gender = 1;
-            if (sex == "女")
-                gender = 0;
             SQLHelper sh = new SQLHelper();
             string sql = "select max(studentID) from tblstudent";
             int ret = sh.RunSelectSQLToScalar(sql) + 1;
@@ -60,5 +67,6 @@ namespace computerclass1.admin
                 Response.Write(ex.Message);
             }
         }
+
     }
 }

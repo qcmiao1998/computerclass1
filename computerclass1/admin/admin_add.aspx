@@ -68,7 +68,7 @@
                     ForeColor="Red"></asp:RequiredFieldValidator>
               &nbsp;<asp:RegularExpressionValidator 
                     ID="RegularExpressionValidatortelephonenumber" runat="server" ControlToValidate="txttelephonenumber" 
-                    ValidationExpression="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$"   ErrorMessage="*手机号码格式错误!" 
+                    ValidationExpression="(\(\d{3}\)|\d{3}-)?\d{8}"   ErrorMessage="*手机号码格式错误!" 
                     ForeColor="Red"></asp:RegularExpressionValidator>
               </td>
           </tr>
@@ -76,8 +76,8 @@
             <td align="right" class="style16">性别：</td>
             <td>
                 <asp:DropDownList ID="DDLSex" runat="server">
-                    <asp:ListItem>男</asp:ListItem>
-                    <asp:ListItem>女</asp:ListItem>
+                    <asp:ListItem Value="1">男</asp:ListItem>
+                    <asp:ListItem Value="0">女</asp:ListItem>
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="Validatorsex" runat="server" 
                     ControlToValidate="DDLSex" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -95,9 +95,10 @@
           <tr>
             <td align="right" class="style16">院系：</td>
             <td class="style16">
-                <asp:TextBox ID="txtdept" runat="server"></asp:TextBox>
+                <asp:DropDownList ID="ddldept" runat="server" AutoPostBack="True" Height="17px" Width="188px">
+                </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="Validatordept" runat="server" 
-                    ControlToValidate="txtdept" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
+                    ControlToValidate="ddldept" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
               </td>
           </tr>
           <tr>

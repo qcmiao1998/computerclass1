@@ -5,7 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SQL;
+using System.Data;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace computerclass1.admin
 {
@@ -30,6 +33,9 @@ namespace computerclass1.admin
             string pwd;
             SqlDataReader sdr;
             string sql = string.Format("select Password from tblstudent where StudentNumber = '{0}' ", tbxUsername.Text);
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] inputpwd = Encoding.Default.GetBytes(tbxPwd.Text);
+            byte[] outputpwd = md5.ComputeHash(inputpwd);
             if (tbxValidate.Text !=sValidator )
             {
                 Response.Write("<script language='javascript'>alert ('验证码错误')</script>");
@@ -38,18 +44,19 @@ namespace computerclass1.admin
             try
             {
                 userdb.RunSQL(sql ,out sdr);
-                userdb.Close();
+                
                 
             }
             catch (Exception err)
             {
+                userdb.Close();
                 Response.Write(string.Format("Error. {0}", err.Message));
                 return;
             }
             if (sdr.Read())
             {
                 pwd = sdr.GetString(0);
-                if (tbxPwd.Text == pwd)
+                if (BitConverter.ToString(outputpwd).Replace("-", "") == pwd)
                 {
                     Response.Redirect("default.aspx");
                 }
@@ -62,6 +69,7 @@ namespace computerclass1.admin
             {
                 Response.Write("<script language='javascript'>alert ('用户名错误')</script>");
             }
+            userdb.Close();
         }
     }
 }
