@@ -95,7 +95,7 @@
           <tr>
             <td align="right" class="style16">院系：</td>
             <td class="style16">
-                <asp:DropDownList ID="ddldept" runat="server" AutoPostBack="True" Height="17px" Width="188px">
+                <asp:DropDownList ID="ddldept" runat="server" Height="17px" Width="188px">
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="Validatordept" runat="server" 
                     ControlToValidate="ddldept" ErrorMessage="*必须填写此项" ForeColor="Red"></asp:RequiredFieldValidator>
