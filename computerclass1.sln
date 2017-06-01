@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "computerclass1", "computerclass1\computerclass1.csproj", "{5AA0302B-51F5-418A-9D32-38BF0DF2C161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRoad", "FindRoad\FindRoad.csproj", "{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,18 @@ Global
 		{5AA0302B-51F5-418A-9D32-38BF0DF2C161}.Release|x86.ActiveCfg = Release|x64
 		{5AA0302B-51F5-418A-9D32-38BF0DF2C161}.Release|x86.Build.0 = Release|x64
 		{5AA0302B-51F5-418A-9D32-38BF0DF2C161}.Release|x86.Deploy.0 = Release|x64
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|x64.Build.0 = Release|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFCAD1A8-9FD1-45A8-844D-91A7099C6DFA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace computerclass1.admin
 {
-    public partial class admin_list : System.Web.UI.Page
+    public partial class admin_list : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

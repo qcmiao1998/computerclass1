@@ -63,7 +63,7 @@
                 <asp:BoundField DataField="email" HeaderText="Email" />
                 <asp:BoundField DataField="birthday" HeaderText="Birthday" DataFormatString="{0:MM/dd/yyyy}" />
                 <asp:BoundField DataField="logintimes" HeaderText="Logintimes " />
-                <asp:HyperLinkField DataNavigateUrlFields="StudentNumber" DataTextField="StudentName" DataTextFormatString="Modify" HeaderText="Modify" />
+                <asp:HyperLinkField DataNavigateUrlFields="StudentID" DataTextField="StudentName" DataTextFormatString="Modify" HeaderText="Modify" DataNavigateUrlFormatString="admin_add.aspx?sid={0}" />
                 <asp:TemplateField HeaderText="Delete">
                     <ItemTemplate>
                         <asp:LinkButton ID="LinkButton1" runat="server" CommandName="Delete" OnClientClick="return confirm ('Are you sure?');">删除</asp:LinkButton>

