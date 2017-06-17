@@ -15,7 +15,7 @@ namespace FindRoad
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            if (!IsPostBack)
             {
                 SQLHelper sh = new SQLHelper();
                 DataSet ds = new DataSet();
@@ -28,7 +28,7 @@ namespace FindRoad
                 }
                 catch (Exception ex)
                 {
-                    this.Response.Write(string.Format("<script> alert('{0}'); </script>", ex.Message.Replace("\r\n", "")));
+                    Response.Write(string.Format("<script> alert('{0}'); </script>", ex.Message.Replace("\r\n", "")));
                 }
                 finally
                 {
@@ -36,23 +36,23 @@ namespace FindRoad
                     sh = null;
                 }
 
-                this.ddlStart.DataSource = ds.Tables[0];
-                this.ddlEnd.DataSource = ds.Tables[0];
+                ddlStart.DataSource = ds.Tables[0];
+                ddlEnd.DataSource = ds.Tables[0];
 
-                this.ddlStart.DataTextField = "Location";
-                this.ddlStart.DataValueField = "Location";
+                ddlStart.DataTextField = "Location";
+                ddlStart.DataValueField = "Location";
 
-                this.ddlEnd.DataTextField = "Location";
-                this.ddlEnd.DataValueField = "Location";
+                ddlEnd.DataTextField = "Location";
+                ddlEnd.DataValueField = "Location";
 
-                this.ddlStart.DataBind();
-                this.ddlEnd.DataBind();
+                ddlStart.DataBind();
+                ddlEnd.DataBind();
 
-                this.ddlStart.Items.Insert(0, new ListItem("Choose", "0"));
-                this.ddlStart.SelectedValue = "0";
+                ddlStart.Items.Insert(0, new ListItem("Choose", "0"));
+                ddlStart.SelectedValue = "0";
 
-                this.ddlEnd.Items.Insert(0, new ListItem("Choose", "0"));
-                this.ddlEnd.SelectedValue = "0";
+                ddlEnd.Items.Insert(0, new ListItem("Choose", "0"));
+                ddlEnd.SelectedValue = "0";
             }
 
         }
@@ -61,7 +61,7 @@ namespace FindRoad
         {
             if (ddlStart.SelectedValue == "0" || ddlEnd.SelectedValue == "0")
             {
-                this.Response.Write("<script>alert('Didn't Choose!');</script>");
+                Response.Write("<script>alert('Didn't Choose!');</script>");
                 return;
             }
             if (ddlStart.SelectedValue == ddlEnd.SelectedValue)
@@ -107,7 +107,7 @@ namespace FindRoad
             sh = null;
 
             RoutePlanner planner = new RoutePlanner();
-            RoutePlanResult result = planner.Paln(nodeList, this.ddlStart.SelectedValue, this.ddlEnd.SelectedValue);
+            RoutePlanResult result = planner.Paln(nodeList, ddlStart.SelectedValue, ddlEnd.SelectedValue);
 
             lblResult.Text = "Distance：" + result.getWeight().ToString() + "&nbsp;Route：" + DetailedRoute(result);
 
@@ -123,7 +123,7 @@ namespace FindRoad
             {
                 route += point[i] + "--->";
             }
-            route += this.ddlEnd.SelectedValue;
+            route += ddlEnd.SelectedValue;
 
             return route;
         }
